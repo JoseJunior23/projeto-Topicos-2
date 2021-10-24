@@ -19,9 +19,10 @@ $ cd backend
 $ yarn install
       ou
   npm install
-  
+
 # criar o arquivo ormconfig
-$ Criar um arquivo com o nome ormconfig.json na raiz do projeto, contendo os dados para conexão com o banco de dados
+$ Criar um arquivo com o nome ormconfig.json na raiz do projeto, 
+contendo os dados para conexão com o banco de dados
 Ex: {
   "type": "",
   "host": "",
