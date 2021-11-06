@@ -1,7 +1,7 @@
 import { getCustomRepository } from "typeorm";
 import { AppError } from "../../../shared/errors/AppError";
 import { Product } from "../typeorm/entities/Product";
-import { ProductRepository } from "../typeorm/repositories/ProductRepository";
+import ProductRepository from "../typeorm/repositories/ProductRepository";
 
 interface IRequest {
   id: string;
@@ -10,7 +10,7 @@ interface IRequest {
   price: number;
 }
 
-export class UpdateProductservice {
+export default class UpdateProductservice {
   public async execute({ id, name, quantity, price }: IRequest): Promise<Product> {
 
     const productRepository = getCustomRepository(ProductRepository);
